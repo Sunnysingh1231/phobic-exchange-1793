@@ -4,17 +4,23 @@
     justify-content: space-between;
     width: 1000px;
     margin: auto;
+    height: 40px;
+    align-items: center;
 }
 #nav div:nth-child(1),#nav2 div:nth-child(1){
     width: 35%;
     display: flex;
     justify-content: space-between;
 }
+#nav div:nth-child(2)>a:hover{
+    color:white;
+    background-color:rgb(250, 84, 28);
+}
 #bignav{
     position: sticky;
     top: 0px;
     width: 100%;
-    background-color: white;
+    background-color: rgb(35, 32, 32);
 }
 #nav2{
     display: flex;
@@ -39,6 +45,67 @@
 #nav2>div:nth-child(2){
     width: 20%;
     font-size: 20px;
+}
+#nav2 .butt>button:hover{
+    background-color: rgb(255, 187, 0);
+    border: 0px;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+}
+.soft{
+    display: none;
+    /* border: 2px solid blue; */
+    background-color: white;
+    grid-template-columns: repeat(3,1fr);
+    width: 800px;
+    border: 2px solid blue;
+    padding: 20px 20px;
+
+}
+.soft>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.soft>div>div{
+    border: 2px solid blue;
+    width: 225px;
+    margin: 10px 0px;
+    display: grid;
+}
+.soft>div>div:nth-child(1){
+    display: grid;
+    border: 2px solid rgb(20, 20, 22);
+    grid-template-columns: repeat(1,1fr);
+    direction: ltr;
+    color: green;
+    width: 225px;
+
+}
+.hov:hover .soft{
+    display: block;
+    position: absolute;
+}
+
+
+.howww:hover a{
+    color: red;
+    text-decoration: none;
+}
+.contz{
+    display: none;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.howww:hover .contz{
+    display: block;
+    position: absolute
+}
+.contz{
+    
+}
+.contz div a{
+    text-decoration: none;
 }
 #color{
     background-color: rgb(250, 84, 28);
@@ -108,29 +175,64 @@
     margin-right:10px;
 }
 #bigbox{
-    display: grid;
-    border: 2px solid black;
     width: 1000px;
+    display: grid;
     grid-template-columns: repeat(3,1fr);
-    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 30px;
 
+}
+#bigbox>div{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 30px;
+}
+#bigbox>div div{
+    margin: 20px 20px;
+}
+#bigbox div div button{
+    /* color: red; */
+    width: 200px;
+    margin-left: 15%;
+    background-color: red;
+    border: 0px;
+    height: 30px;
+}
+#color2{
+    background: linear-gradient(160deg,rgb(99, 193, 174),rgb(8, 167, 114));
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+#color2 .incolor{
+    width: 1000px;
     margin: auto;
 }
-#bigbox>div:nth-child(1),
-#bigbox>div:nth-child(2),
-#bigbox>div:nth-child(3),
-#bigbox>div:nth-child(4),
-#bigbox>div:nth-child(5){
-    border: 2px solid black;
-    width: 300px;
-    justify-content: space-evenly;
-    
+#color2 .incolor>div{
+    width: 700px;
+    margin: auto;
+    padding: 40px;
+
 }
-#bigbox>div:nth-child(1)>button,
-#bigbox>div:nth-child(2)>button,
-#bigbox>div:nth-child(3)>button,
-#bigbox>div:nth-child(4)>button,
-#bigbox>div:nth-child(5)>button{
-    color: red;
-    margin: 10px 100px;
+#color2 .incolor div>h1{
+    text-align: center;
+    color: white;
+}
+#color2 .incolor div p{
+    color: white; text-align: center;
+}
+#color2 .incolor2{
+    display: grid;
+    width:1000px;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+#color2 .incolor2 div{
+    display: grid;
+    width: 250px;
+    text-align: center;
+    color: white;
+
 }
