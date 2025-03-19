@@ -18,6 +18,7 @@
     align-items: center;
     width: 210px;
     margin: auto;
+    /* border: 2px solid red; */
 }
 #input{
     width: 400px;
@@ -25,6 +26,8 @@
     margin-top: 40px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    height: 230px;
     padding: 10px 5px;
+    height: 300px;
+    /* border: 2px solid red; */
 
 }
 #input .txt_field{
@@ -35,14 +38,14 @@
     height: 40px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: 0px;
-    border-radius: 20px;
+    border-radius: 5px;
     padding-left: 30px;
 }
 #input .txt_field:nth-child(2)>input{
     height: 40px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: 0px;
-    border-radius: 20px;
+    border-radius: 5px;
     padding-left: 30px;
 }
 #input .txt_field>label{
@@ -62,4 +65,17 @@
 #login>div>input{
     height: 30px;
     margin: 20px 20px;
+}
+form .anctag{
+    /* width: 100px;
+    height: 100px; */
+    /* align-items: end; */
+    margin: 80px 10px 0px 250px;
+    width: 120px;
+    align-items: end;
+    margin-right: 10px;
+    /* border: 2px solid red; */
+}
+form .anctag a{
+    text-decoration: none;
 }

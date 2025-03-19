@@ -20,22 +20,38 @@
         
     </div>
     <div id="input">
-        <form action="">
+        <form action="" id="form">
             <div class="txt_field">
-                <label for="">Email address</address></label>
-                <input type="email" required>
+                <label for="">E-mail</address></label>
+                <input type="email" required placeholder="enter your email">
             </div>
             <div class="txt_field">
                 <label for="">Password</label>
-                <input type="password" required>
-            </div>            
+                <input type="password" placeholder="Enter your password">
+            </div> 
+            <div class="anctag">
+                <a href="">forgot password</a> 
+            </div>          
         </form>
     </div>
     <div id="login">
         <div>
-            <a href="">forgot password</a>
-            <input type="submit" value="login" name="" id="">
+            
+            <input type="submit" value="login" name="" id="sublit">
         </div>
     </div>
 </body>
+<script>
+
+
+let submit = document.getElementById("sublit");
+
+submit.addEventListener("click", function() {
+    alert("Login successful.");
+    window.location.assign("index.html")
+});
+
+
+
+</script>
 </html>
